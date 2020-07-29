@@ -66,7 +66,7 @@ body {
   margin-top: 16px;
   margin-bottom: 35px;
 }
-.btn_getstarted {
+.btn__pink {
   padding: 0.5em 3em;
   width: fit-content;
   background-color: hsl(322, 100%, 66%);
@@ -102,16 +102,27 @@ body {
   border-radius: 0.5em;
   margin-bottom: 30px;
   height: 400px;
-  padding-left: 5em;
+  padding: 3em 0em 3em 5em;
+  justify-content: space-between;
 }
 .feature_text {
-  flex-basis: 50%;
+  flex-basis: 48%;
   display: flex;
   flex-direction: column;
 }
+.feature_text > h2 {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.feature_text > p {
+  font-weight: 400;
+}
+.feature--flowing {
+  padding-right: 1.5em;
+}
 
 .feature_img_grow {
-  flex-basis: 50%;
+  flex-basis: 43%;
   background-image: url(./images/illustration-grow-together.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -121,7 +132,7 @@ body {
 }
 
 .feature_img_flow {
-  flex-basis: 50%;
+  flex-basis: 43%;
   background-image: url(./images/illustration-flowing-conversation.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -131,7 +142,7 @@ body {
 }
 
 .feature_img_users {
-  flex-basis: 50%;
+  flex-basis: 43%;
   background-image: url(./images/illustration-your-users.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -141,6 +152,73 @@ body {
 }
 
 /* footer */
+
+footer {
+  background-color: hsl(192, 100%, 9%);
+  color: white;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__container {
+  width: 85vw;
+  padding-top: 7.5em;
+  padding-bottom: 5em;
+  display: flex;
+  flex-direction: column;
+}
+.footer__container > p {
+  align-self: flex-end;
+  margin-top: 50px;
+}
+.footer--logo {
+  filter: invert(83%) sepia(100%) saturate(1%) hue-rotate(287deg)
+    brightness(106%) contrast(101%);
+}
+
+.footer__text__container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+  margin-right: 50px;
+}
+.location--item {
+  max-width: 400px;
+  list-style-image: url(./images/icon-location.svg);
+}
+.phone--item {
+  list-style-image: url(./images/icon-phone.svg);
+  margin: 15px 0px;
+}
+.email--item {
+  list-style-image: url(./images/icon-email.svg);
+}
+
+.footer__links > li {
+  list-style-type: none;
+  cursor: pointer;
+}
+.footer__links > li:hover {
+  opacity: 0.8;
+}
+.footer__links > li:nth-child(2) {
+  margin: 10px 0;
+}
+
+.fab {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.fab:hover {
+  opacity: 0.8;
+}
+
+.fa-twitter {
+  margin: 0 10px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
