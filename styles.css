@@ -10,6 +10,7 @@ body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 1.1rem;
+  position: relative;
 }
 
 img {
@@ -62,6 +63,26 @@ Layout
   color: white;
 }
 
+.box-action{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  max-width: 650px;
+  height: 220px;
+  border-radius: .5em;
+  padding: 1em 1.5em;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  text-align: center;
+  z-index: 3;
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  bottom: 17%;
+
+}
 /* Header section */
 
 .flex-header {
@@ -166,7 +187,7 @@ Layout
 
 .footer-content {
   padding-top: 7.5em;
-  padding-bottom: 5em;
+  padding-bottom: 2em;
 }
 
 .footer-logo {
@@ -231,4 +252,66 @@ Layout
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+
+@media (max-width: 675px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .flex-header, .feature, .footer-icons, .copyright-text{
+    text-align: center;
+  }
+
+  .navbar{
+    margin-bottom: 4em;
+    font-size: .8rem;
+    align-items: center;
+  }
+  
+  .huddle-logo {
+    width: 100px;
+  }
+
+  .flex-header {
+    display: block;
+  }
+  .hero-text, .hero-img {
+    width: 100%;
+  }
+  .hero-img{
+    margin-top: 3em;
+  }
+
+  /* features */
+
+  .feature{
+    flex-direction: column;
+    padding: 1em;
+    height: 500px;
+  }
+  .feature-img-grow, .feature-img-users{
+    order: -1
+  }
+
+  .box-action{
+    left: 12%;
+    right: 12%;
+    bottom: 20%;
+  
+  }
+
+  /* footer */
+  .footer-text-container {
+    display: block;
+    width: 100%;
+  }
+  .contact-info{
+    margin-bottom: 3em;
+  }
+  .footer-icons{
+    margin-top: 3em;
+  }
+
 }
