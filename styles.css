@@ -74,14 +74,11 @@ Layout
   border-radius: .5em;
   padding: 1em 1.5em;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
   text-align: center;
-  z-index: 3;
-  position: absolute;
-  left: 25%;
-  right: 25%;
-  bottom: 17%;
 
+  width: 90%;
+  margin: 0 auto;
+  transform: translateY(3.5rem);
 }
 /* Header section */
 
@@ -125,7 +122,7 @@ Layout
 
 .features-container {
   padding-top: 5em;
-  padding-bottom: 10em;
+  padding-bottom: 7em;
 }
 
 .feature {
