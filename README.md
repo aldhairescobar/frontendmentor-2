@@ -1,6 +1,6 @@
 ## Huddle landing page with alternating feature blocks
 
-I built this website in order to improve my HTML and CSS code. (Practice, practice, practice)
+I built this website in order to practice with my HTML and CSS code.
 
 ### Demo
 https://aldhairescobar.github.io/frontendmentor-2/
